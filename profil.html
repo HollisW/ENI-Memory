@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Biographie de Sonic Youth" />
+    <meta name="description" content="Memory pour l'ENI" />
     <link rel="stylesheet" href="projet.css" />
     <title>ENI - MEMORY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+    <script src="profil.js"></script>
+<body class="body"> 
     <header>
-        <h1 class="zone around">ENI - MEMORY - Profil</h1>
-        <nav>
+        <h1 class="zone around h1Style">ENI - MEMORY - Profil</h1>
+        <nav class="zone navbox">
             <ul class="zone evenly">
-                <li><a href="accueil.html" target="_blank">Accueil</a></li>
-                <li><a href="inscription.html" target="_blank">Inscription</a></li>
-                <li><a href="connexion.html" target="_blank">Connexion</a></li>
-                <li><a href="profil.html" target="_blank">Profil</a></li>
-                <li><a href="jouer.html" target="_blank">Jouer</a></li>
+                <li class="liStyle">
+                  <a href="accueil.html" target="_blank" class="aStyle">Accueil</a>
+                </li>
+                <li class="liStyle">
+                  <a href="inscription.html" target="_blank" class="aStyle"
+                    >Inscription</a
+                  >
+                </li>
+                <li class="liStyle">
+                  <a href="connexion.html" target="_blank" class="aStyle"
+                    >Connexion</a
+                  >
+                </li>
+                <li class="liStyle">
+                  <a href="profil.html" target="_blank" class="aStyle">Profil</a>
+                </li>
+                <li class="liStyle">
+                  <a href="jouer.html" target="_blank" class="aStyle">Jouer</a>
+                </li>
             </ul>
         </nav>
-        <main>
-            <section class="zone textbox">
-    
-            </section>
-        </main>
-    </header>   
+    </header>
+</body>
+<main>
+    <section class="zone textbox">
+        <div class="div">
+            <h4 class="profilh4Style">Profil</h4>
+            <form action="">
+                <label class="label" for="nom">Votre nom d'utilisateur</label><br />
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              class="input"
+              value="Pseudo"
+              readonly
+            />
+            <hr class="hr" />
+            <label class="label" for="email">Votre email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              value="Email"
+              readonly
+            />
+            <hr class="hr" />
+            <label class="label" for="select">Choix du Memory</label>
+            <select name="select" id="select">
+                <option value="scrabble">Scrabble</option>
+                <option value="animaux">Animaux</option>
+                <option value="animauxAnimes">Animaux Animés</option>
+                <option value="animauxDomestiques">Animaux Domestiques</option>
+                <option value="chiens">Chiens</option>
+                <option value="dinosaures">Dinosaures</option>
+                <option value="dinosauresAvecNom">Dinosaures avec Nom</option>
+                <option value="memoryLegume">Memory Légumes</option>
+            </select>
+            <hr class="hr">
+            <label class="label" for="grille">Choix de la taille du Memory</label>
+            <select name="grille" id="grille">
+                <option value="4x3">4x3</option>
+                <option value="4x4">4x4</option>
+                <option value="5x4">5x4</option>
+            </select>
+            </form>
+        </div>
+    </section>
+</main>
 </body>
 </html>
